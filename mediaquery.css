@@ -45,15 +45,15 @@
 
 .nav-links {
   position: absolute;
-  top: 100%;
-  left: -100%; 
+  bottom: 0;
+  transform: translateY(100%);
+  left: -100%;
   background-color: var(--color-white);
   width: 100%;
-  max-height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: left 1s ease-in-out, max-height 0.15s ease-in-out;
+  transition: left 500ms ease-in-out, max-height 0.15s ease-in-out;
 }
 
 .nav-links.active {
@@ -69,7 +69,7 @@
 
   .toggle-btn {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
 
   .slide {
@@ -362,7 +362,7 @@
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 39.6px;
   }
 
@@ -490,7 +490,9 @@ h1{
     text-align: center;
   }
 
-
+  .pagination {
+    left:40%;
+  }
 
 
   h3 {
@@ -522,7 +524,7 @@ h1{
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 32px;
   }
 
@@ -530,11 +532,7 @@ h1{
   .discount-offer {
     width: 200px;
     height: 80px;
-    transform: translate(-50%);
-  }
-
-  .product-img-banner img {
-    transform: translate(10%);
+    transform: translate(-20%);
   }
 
   .discount-offer h4 {
@@ -573,5 +571,11 @@ h1{
   .arow {
     width: 34px;
     height: 34px;
+  }
+  button a{
+    max-width:150px;
+    height:40px;
+    padding:0 7px;
+    gap:8px;
   }
 }
